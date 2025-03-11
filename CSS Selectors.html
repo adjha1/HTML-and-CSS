@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All CSS Selectors in One</title>
+    <style>
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Type Selector */
+        h1 {
+            color: #333;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+        }
+
+        /* ID Selector */
+        #unique {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Attribute Selector */
+        a[href^="https"] {
+            color: green;
+        }
+
+        /* Descendant Selector */
+        div p {
+            font-size: 18px;
+            color: purple;
+        }
+
+        /* Child Selector */
+        div > p {
+            color: orange;
+        }
+
+        /* Adjacent Sibling Selector */
+        h1 + p {
+            color: teal;
+        }
+
+        /* General Sibling Selector */
+        h1 ~ p {
+            font-style: italic;
+        }
+
+        /* Pseudo-Class Selector */
+        a:hover {
+            color: red;
+        }
+
+        p:nth-child(2) {
+            font-size: 20px;
+        }
+
+        /* Pseudo-Element Selector */
+        p::before {
+            content: "Note: ";
+            font-weight: bold;
+        }
+
+        /* Grouped Selector */
+        h2, p {
+            color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Universal Selector -->
+    <h1>This is an h1 heading</h1>
+
+    <!-- Type Selector -->
+    <p>This is a paragraph styled by the Type Selector (p)</p>
+
+    <!-- Class Selector -->
+    <p class="highlight">This paragraph has a yellow background because of the class selector.</p>
+
+    <!-- ID Selector -->
+    <p id="unique">This paragraph is bold and red due to the ID selector.</p>
+
+    <!-- Attribute Selector -->
+    <a href="https://www.example.com">This link is green because it uses the attribute selector for HTTPS links.</a><br>
+    <a href="http://www.example.com">This link does not match the attribute selector.</a>
+
+    <!-- Descendant Selector -->
+    <div>
+        <p>This paragraph is purple and inside a div, targeted by the descendant selector.</p>
+    </div>
+    <p>This paragraph is not inside a div, so it’s unaffected by the descendant selector.</p>
+
+    <!-- Child Selector -->
+    <div>
+        <p>This paragraph is orange because it is a direct child of a div.</p>
+        <section>
+            <p>This paragraph is not orange because it is inside a section, not directly under the div.</p>
+        </section>
+    </div>
+
+    <!-- Adjacent Sibling Selector -->
+    <h1>This heading is followed by a paragraph</h1>
+    <p>This paragraph is teal because it's immediately after the h1 heading (adjacent sibling selector).</p>
+
+    <!-- General Sibling Selector -->
+    <h1>This heading has several sibling paragraphs.</h1>
+    <p>This paragraph is italicized because it’s a sibling of the h1 heading (general sibling selector).</p>
+    <p>This paragraph is also italicized for the same reason.</p>
+
+    <!-- Pseudo-Class Selector -->
+    <a href="#">Hover over me to change my color to red</a>
+    <p>This is the second paragraph, which has a larger font size due to the nth-child pseudo-class selector.</p>
+
+    <!-- Pseudo-Element Selector -->
+    <p>This paragraph has content before it due to the ::before pseudo-element.</p>
+
+    <!-- Grouped Selector -->
+    <h2>This heading and the following paragraph are both dark blue.</h2>
+    <p>This paragraph is dark blue because of the grouped selector.</p>
+
+</body>
+</html>
