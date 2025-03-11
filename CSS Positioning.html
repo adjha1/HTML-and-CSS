@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      height: 400px;
+      background-color: #f0f0f0;
+      border: 2px solid #333;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      background-color: lightcoral;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      border: 2px solid black;
+      font-weight: bold;
+    }
+
+    .static {
+      position: static;
+      background-color: lightblue;
+    }
+
+    .relative {
+      position: relative;
+      top: 30px;
+      left: 50px;
+      background-color: lightgreen;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: lightseagreen;
+    }
+
+    .fixed {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: lightgoldenrodyellow;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 0;
+      background-color: lightpink;
+      z-index: 1;
+    }
+
+    .inherit {
+      position: inherit;
+      background-color: lightgray;
+    }
+
+    .fixed-container {
+      position: relative;
+      height: 600px;
+      background-color: #e0e0e0;
+      padding: 20px;
+    }
+
+    .fixed-box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      position: fixed;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 2px solid black;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Positioning Properties</h1>
+
+  <!-- Static Positioning -->
+  <h2>Static Positioning</h2>
+  <div class="container">
+    <div class="box static">Static</div>
+  </div>
+
+  <!-- Relative Positioning -->
+  <h2>Relative Positioning</h2>
+  <div class="container">
+    <div class="box relative">Relative</div>
+  </div>
+
+  <!-- Absolute Positioning -->
+  <h2>Absolute Positioning</h2>
+  <div class="container">
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <!-- Fixed Positioning -->
+  <h2>Fixed Positioning</h2>
+  <div class="fixed-container">
+    <div class="box fixed">Fixed</div>
+  </div>
+
+  <!-- Sticky Positioning -->
+  <h2>Sticky Positioning</h2>
+  <div class="container">
+    <div class="box sticky">Sticky</div>
+    <p>Scroll down to see sticky behavior!</p>
+    <p style="height: 600px;">More content here to make the page scrollable...</p>
+  </div>
+
+  <!-- Inherit Positioning -->
+  <h2>Inherit Positioning</h2>
+  <div class="container">
+    <div class="box inherit">Inherit</div>
+  </div>
+
+  <!-- Fixed Position inside a container -->
+  <h2>Fixed Inside a Container</h2>
+  <div class="fixed-container">
+    <div class="fixed-box">Fixed Box</div>
+    <p>Scroll the page to see the fixed box.</p>
+    <p style="height: 600px;">Scroll down...</p>
+  </div>
+</body>
+</html>
