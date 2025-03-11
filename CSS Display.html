@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Property</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      border: 2px solid black;
+    }
+
+    .block {
+      background-color: lightblue;
+      display: block;
+    }
+
+    .inline {
+      background-color: lightcoral;
+      display: inline;
+    }
+
+    .inline-block {
+      background-color: lightgreen;
+      display: inline-block;
+    }
+
+    .flex {
+      background-color: lightyellow;
+      display: flex;
+    }
+
+    .grid {
+      background-color: lightpink;
+      display: grid;
+    }
+
+    .none {
+      background-color: lightgray;
+      display: none;
+    }
+
+    .inline-flex {
+      background-color: lightseagreen;
+      display: inline-flex;
+    }
+
+    .inline-grid {
+      background-color: lightgoldenrodyellow;
+      display: inline-grid;
+    }
+
+    .list-item {
+      background-color: lightsteelblue;
+      display: list-item;
+    }
+
+    .table {
+      background-color: lightgreen;
+      display: table;
+    }
+
+    .table-row {
+      background-color: lightcoral;
+      display: table-row;
+    }
+
+    .table-cell {
+      background-color: lightblue;
+      display: table-cell;
+    }
+
+    .run-in {
+      background-color: lightgray;
+      display: run-in;
+    }
+  </style>
+</head>
+<body>
+  <h1>Display Property</h1>
+
+  <div class="container">
+    <div class="box block">Block</div>
+    <div class="box inline">Inline</div>
+    <div class="box inline-block">Inline-block</div>
+    <div class="box flex">Flex</div>
+    <div class="box grid">Grid</div>
+    <div class="box none">None</div>
+    <div class="box inline-flex">Inline-flex</div>
+    <div class="box inline-grid">Inline-grid</div>
+    <div class="box list-item">List-item</div>
+    <div class="box table">Table</div>
+    <div class="box table-row">Table-row</div>
+    <div class="box table-cell">Table-cell</div>
+    <div class="box run-in">Run-in</div>
+  </div>
+</body>
+</html>
