@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transitions Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: lightcoral;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border: 2px solid #333;
+      transition: all 0.5s ease; /* Default transition for all properties */
+    }
+
+    /* Hover effect */
+    .box:hover {
+      background-color: lightseagreen;
+      transform: scale(1.2);
+      color: black;
+    }
+
+    /* Transition properties demo */
+    .transition-box {
+      width: 150px;
+      height: 150px;
+      background-color: #8cbbfc;
+      transition: all 0.8s ease-in-out;
+    }
+
+    .transition-box:hover {
+      background-color: #ff7f50;
+      width: 300px;
+      height: 300px;
+    }
+
+    /* Individual property transitions */
+    .transition-width {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      transition: width 0.6s ease-out;
+    }
+
+    .transition-width:hover {
+      width: 300px;
+    }
+
+    .transition-color {
+      width: 150px;
+      height: 150px;
+      background-color: lightyellow;
+      transition: background-color 1s linear;
+    }
+
+    .transition-color:hover {
+      background-color: lightgreen;
+    }
+
+    .transition-border {
+      width: 150px;
+      height: 150px;
+      background-color: lightpink;
+      border: 5px solid transparent;
+      transition: border-color 0.5s ease;
+    }
+
+    .transition-border:hover {
+      border-color: #ff6347;
+    }
+
+    .transition-delay {
+      width: 150px;
+      height: 150px;
+      background-color: lightgoldenrodyellow;
+      transition: transform 1s ease 0.5s; /* Delayed transition */
+    }
+
+    .transition-delay:hover {
+      transform: rotate(180deg);
+    }
+
+    .transition-multiple {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+
+    .transition-multiple:hover {
+      background-color: lightgreen;
+      transform: scale(1.5);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CSS Transitions Example</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- Default transition on all properties -->
+    <div class="box">
+      Hover Me!
+    </div>
+
+    <!-- Transition on all properties -->
+    <div class="transition-box">
+      Hover Me!
+    </div>
+
+    <!-- Transition on specific width property -->
+    <div class="transition-width">
+      Hover Me!
+    </div>
+
+    <!-- Transition on background color -->
+    <div class="transition-color">
+      Hover Me!
+    </div>
+
+    <!-- Transition on border color -->
+    <div class="transition-border">
+      Hover Me!
+    </div>
+
+    <!-- Transition with a delay -->
+    <div class="transition-delay">
+      Hover Me!
+    </div>
+
+    <!-- Multiple properties transition -->
+    <div class="transition-multiple">
+      Hover Me!
+    </div>
+
+  </div>
+
+</body>
+</html>
